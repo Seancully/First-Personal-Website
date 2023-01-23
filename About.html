@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class = "me">
+
+        <nav>
+            <img src="asssets/myLogo.png" alt="sean" class = "logo">
+            <ul>
+                <li><a href="Index.html">HOME();</a></li>
+                <li><a href="About.html">ABOUT_ME();</a></li>
+            </ul>
+
+            <p>Change light/dark mode</p>
+            <img src = "asssets/moon.png" id = "icon">
+        </nav>
+
+        <div class = "AboutMe">
+            <h1>About<span> Seán Culleton</span></h1>
+            <p>I am currently studying at <span>Technological University Dublin.</span></p>
+            
+            <p>I will graduate in 2025 with a BSc in <span>Computer Science</span> Honours Degree.</p>
+            
+            <p>I have so far <span>created many projects</span> by: using many different <span>programming</span> languages,<br><span>scripting</span> languages, <span>markup</span> languages, creating <span>databases</span>, and also dealing with <br><span>micro-processors</span> to name a few methods of project creation I have done thus far.</p>
+
+            <p>You may see some of these past projects on my <span>GitHub</span> on the home page.</p>
+            
+            <p>You may also download/view my <span>CV</span> on the home page too to learn much more about me and<br> what I may offer to your team.</p>
+            
+            <p>You may <span>contact me</span> regarding any freelancing work and/or potentially other work via my <span>email below</span><br> in the website footer.</p>
+
+            <p><span>Thank you</span> again for viewing my personal website.</p>
+            
+        </div>
+
+        <div class = "images">
+            <img src = "asssets/shape.png" class = "shape" alt = "shape">
+            <img src = "asssets/SeanPic1.png" class = "seanPic" alt = "seanPic">
+        </div>
+
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme");
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "asssets/moon.png"
+            } else{
+                icon.src = "asssets/sun.png"
+            }
+        }
+    </script>
+
+</body>
+<footer>Site by <span>Sean Culleton</span> &copy; 2023
+    <br>Contact me at <span>seanculleton02@gmail.com</span>
+</footer>
+</html>

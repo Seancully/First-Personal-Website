@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class = "me">
+
+        <nav>
+            <img src="asssets/myLogo.png" alt="sean" class = "logo">
+            <ul>
+                <li><a href="Index.html">HOME();</a></li>
+                <li><a href="About.html">ABOUT_ME();</a></li>
+            </ul>
+
+            <p>Change light/dark mode</p>
+            <img src = "asssets/moon.png" id = "icon">
+            
+        </nav>
+
+        <div class = "detail">
+            <h1><span>Seán Culleton's</span> Personal Website</h1>
+            <p>This is my personal website to showcase a little bit about myself and it links to my <span>GitHub</span><br>where you may view some of the coding projects I have created too.<br>You may also download/view my <span>CV</span> here or view my <span>LinkedIn</span> too.</p>
+
+            <p>I'd also like to take this opportunity to thank you for coming to my website.</p>
+
+            <a href = "CV.pdf" download>DOWNLOAD MY CV</a>
+            <a href = "https://github.com/Seancully">VIEW MY GITHUB</a>
+            <a href = "https://www.linkedin.com/in/sean-culleton-016782262/">VIEW MY LINKEDIN</a>
+
+        </div>
+
+        <div class = "images">
+            <img src = "asssets/shape.png" class = "shape" alt = "shape">
+            <img src = "asssets/SeanPic2.png" class = "seanPic" alt = "seanPic">
+        </div>
+
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme");
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "asssets/moon.png"
+            } else{
+                icon.src = "asssets/sun.png"
+            }
+        }
+    </script>
+
+</body>
+<footer>Site by <span>Sean Culleton</span> &copy; 2023
+    <br>Contact me at <span>seanculleton02@gmail.com</span>
+</footer>
+</html>
